@@ -1,0 +1,45 @@
+[
+  {
+    "id": "0",
+    "active": "active",
+    "description": "OUR RESOURCES",
+    "title": "Start reading our blog",
+    "info": {
+      "title": "How to start planning",
+      "text": "Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti. Natum petentium principes mei ea. Tota everti periculis vis ei, quas tibique pro at, eos ut decore ..."
+    },
+    "src": {
+      "first": "/assets/img/photo1.png",
+      "second": "/assets/img/photo2.png",
+      "third": "/assets/img/photo3.png"
+    }
+  },
+  {
+    "id": "1",
+    "description": "OUR RESOURCES 2",
+    "title": "Start reading our blog",
+    "info": {
+      "title": "How to start planning",
+      "text": "Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti. Natum petentium principes mei ea. Tota everti periculis vis ei, quas tibique pro at, eos ut decore ..."
+    },
+    "src": {
+      "first": "/assets/img/photo2.png",
+      "second": "/assets/img/photo3.png",
+      "third": "/assets/img/photo1.png"
+    }
+  },
+  {
+    "id": "2",
+    "description": "OUR RESOURCES 3",
+    "title": "Start reading our blog",
+    "info": {
+      "title": "How to start planning",
+      "text": "Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti. Natum petentium principes mei ea. Tota everti periculis vis ei, quas tibique pro at, eos ut decore ..."
+    },
+    "src": {
+      "first": "/assets/img/photo3.png",
+      "second": "/assets/img/photo1.png",
+      "third": "/assets/img/photo2.png"
+    }
+  }
+]
