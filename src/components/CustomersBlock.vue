@@ -50,7 +50,7 @@
 </template>
 
 <script>
-import customersList from "../assets/JSON/customers.json"
+import customersList from "@/assets/JSON/customers.json"
 export default {
   name: "CustomersBlock",
   data(){

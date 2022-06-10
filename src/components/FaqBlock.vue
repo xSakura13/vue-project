@@ -24,7 +24,7 @@
                     {{ accItem.description }}
                   </div>
                   <div class="col-lg-3 col-md-6 faq__button">
-                    <a href="#">{{ accItem.button }}</a>
+                    <btn-elem :href="href" :btn-title="btnTitle"/>
                   </div>
                 </div>
               </div>
@@ -37,12 +37,19 @@
 </template>
 
 <script>
-import accItems from '../assets/JSON/faqAcc.json'
+import accItems from '@/assets/JSON/faqAcc.json'
+import btnElem from "@/components/btnElem";
 export default {
   name: "FaqBlock",
+  components: {
+    btnElem
+  },
   data(){
     return{
-      accItems: accItems
+      accItems: accItems,
+      btnTitle: 'Go to documentation',
+      href: '#',
+      classEl: null
     }
   }
 }

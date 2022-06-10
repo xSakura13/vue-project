@@ -14,8 +14,8 @@
               Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui laudem an, insolens gubergren similique est cu. Et vel modus congue vituperata.
             </p>
             <div class="plan__button">
-              <a class="plan__view" href="#">View pricing</a>
-              <a class="plan__read" href="#">Read documentation</a>
+              <btn-elem :href="btnOne.href" :btn-title="btnOne.btnTitle" :class-el="btnOne.classEl"/>
+              <btn-elem :href="btnTwo.href" :btn-title="btnTwo.btnTitle" :class-el="btnTwo.classEl"/>
             </div>
           </div>
         </div>
@@ -24,7 +24,29 @@
   </section>
 </template>
 
-<script></script>
+<script>
+import btnElem from "@/components/btnElem";
+export default {
+  name: "PlanBlock",
+  components: {
+    btnElem
+  },
+  data() {
+    return {
+      btnOne: {
+        btnTitle: 'View pricing',
+        href: '#',
+        classEl: 'plan__view'
+      },
+      btnTwo: {
+        btnTitle: 'Read documentation',
+        href: '#',
+        classEl: 'plan__read'
+      }
+    }
+  }
+}
+</script>
 
 <style scoped>
 .plan {

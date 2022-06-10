@@ -55,9 +55,8 @@
 </template>
 
 <script>
-import bannerSlides from '../assets/JSON/banner.json'
-import modal from '../assets/scripts/popup'
-
+import bannerSlides from '@/assets/JSON/banner.json'
+import modal from '@/assets/scripts/popup'
 export default {
   name: "BannerBlock",
   data(){

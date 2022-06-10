@@ -32,7 +32,7 @@
         <div class="row">
           <div class="col">
             <div class="about__button">
-              <a href="#" class="about__read">Read more</a>
+              <btn-elem :href="btnOne.href" :btn-title="btnOne.btnTitle" :class-el="btnOne.classEl"/>
               <p class="about__or">
                 <svg width="15" height="1" viewBox="0 0 15 1" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <line y1="0.5" x2="15" y2="0.5" stroke="#DAE4FE"/>
@@ -42,7 +42,7 @@
                   <line y1="0.5" x2="15" y2="0.5" stroke="#DAE4FE"/>
                 </svg>
               </p>
-              <a href="#" class="about__get">Get started</a>
+              <btn-elem :href="btnTwo.href" :btn-title="btnTwo.btnTitle" :class-el="btnTwo.classEl"/>
             </div>
           </div>
         </div>
@@ -52,13 +52,26 @@
 </template>
 
 <script>
-
-import aboutList from '../assets/JSON/about.json'
+import aboutList from '@/assets/JSON/about.json'
+import btnElem from "@/components/btnElem";
 export default {
   name: "AboutBlock",
+  components: {
+    btnElem
+  },
   data(){
     return{
-      aboutLists: aboutList
+      aboutLists: aboutList,
+      btnOne: {
+        btnTitle: 'Read more',
+        href: '#',
+        classEl: 'about__read'
+      },
+      btnTwo: {
+        btnTitle: 'Get started',
+        href: '#',
+        classEl: 'about__get'
+      }
     }
   }
 }

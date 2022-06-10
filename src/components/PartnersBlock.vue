@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import listPartners from '../assets/JSON/partners.json'
+import listPartners from '@/assets/JSON/partners.json'
 export default {
   name: "PartnersBlock",
   data(){

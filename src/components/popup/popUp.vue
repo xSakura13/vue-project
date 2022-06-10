@@ -17,8 +17,8 @@
 </template>
 
 <script>
-import modal from '../../assets/scripts/popup'
-import popUpVideo from '../../assets/JSON/popup.json'
+import modal from '@/assets/scripts/popup'
+import popUpVideo from '@/assets/JSON/popup.json'
 export default {
   name: "popUp",
   data(){

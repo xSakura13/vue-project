@@ -34,8 +34,8 @@
                       <p class="blog__info-text">
                         {{ blogList.info.text}}
                       </p>
-                      <a href="#" class="blog__info-read">Read now</a>
-                      <a href="#" class="blog__info-add">Add to your bookmarks</a>
+                      <btn-elem :href="btnOne.href" :btn-title="btnOne.btnTitle" :class-el="btnOne.classEl"/>
+                      <btn-elem :href="btnTwo.href" :btn-title="btnTwo.btnTitle" :class-el="btnTwo.classEl"/>
                     </div>
                   </div>
                 </div>
@@ -57,12 +57,26 @@
 </template>
 
 <script>
-import blogLists from '../assets/JSON/blog.json'
+import blogLists from '@/assets/JSON/blog.json'
+import btnElem from "@/components/btnElem";
 export default {
   name: "BlogBlock",
+  components: {
+    btnElem
+  },
   data(){
     return{
-      blogLists: blogLists
+      blogLists: blogLists,
+      btnOne: {
+        btnTitle: 'Read now',
+        href: '#',
+        classEl: 'blog__info-read'
+      },
+      btnTwo: {
+        btnTitle: 'Add to your bookmarks',
+        href: '#',
+        classEl: 'blog__info-add'
+      }
     }
   }
 }

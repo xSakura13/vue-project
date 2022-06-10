@@ -13,15 +13,8 @@
             <p class="app__text">
               Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui laudem an, insolens gubergren similique est cu. Et vel modus congue vituperata. Solum patrioque no sea. Mea ex malis mollis oporteat. Eum an expetenda consequat.
             </p>
-            <a href="#" class="app__view-video">
-              View video
-              <svg width="7" height="8" viewBox="0 0 7 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M6 2.73354C6.66667 3.11844 6.66667 4.08069 6 4.46559L1.5 7.06367C0.833333 7.44857 0 6.96744 0 6.19764V1.00149C0 0.231691 0.833333 -0.249434 1.5 0.135467L6 2.73354Z" fill="white"/>
-              </svg>
-            </a>
-            <a href="#" class="app__features">
-              See features
-            </a>
+            <btn-elem :href="btnOne.href" :btn-title="btnOne.btnTitle" :class-el="btnOne.classEl"/>
+            <btn-elem :href="btnTwo.href" :btn-title="btnTwo.btnTitle" :class-el="btnTwo.classEl"/>
           </div>
         </div>
         <div class="col-xl-7 col-lg-7 col-xs-12">
@@ -36,7 +29,29 @@
   </section>
 </template>
 
-<script></script>
+<script>
+import btnElem from "@/components/btnElem";
+export default {
+  name: "AppBlock",
+  components: {
+    btnElem
+  },
+  data() {
+    return {
+      btnOne: {
+        btnTitle: 'View video',
+        href: '#',
+        classEl: 'app__view-video'
+      },
+      btnTwo: {
+        btnTitle: 'See features',
+        href: '#',
+        classEl: 'app__features'
+      }
+    }
+  }
+}
+</script>
 
 <style scoped>
 .app {
@@ -82,7 +97,11 @@
   color: #ffffff;
   border: 1px solid #4C85FF;
 }
-.app__view-video:hover {
+.app__view-video:after{
+  content: url('data:image/svg+xml,<svg width="7" height="8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 2.73354C6.66667 3.11844 6.66667 4.08069 6 4.46559L1.5 7.06367C0.833333 7.44857 0 6.96744 0 6.19764V1.00149C0 0.231691 0.833333 -0.249434 1.5 0.135467L6 2.73354Z" fill="white"/></svg>');
+  margin-left: 5px;
+}
+.app__view-video:hover{
   background: transparent;
   color: #4C85FF;
 }

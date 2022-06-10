@@ -1,0 +1,24 @@
+[
+  {
+    "active": "active",
+    "current": "page",
+    "href": "#",
+    "title": "Home"
+  },
+  {
+    "href": "#",
+    "title": "Blog"
+  },
+  {
+    "href": "#",
+    "title": "Features"
+  },
+  {
+    "href": "#",
+    "title": "Pricing"
+  },
+  {
+    "href": "#",
+    "title": "Documentation"
+  }
+]

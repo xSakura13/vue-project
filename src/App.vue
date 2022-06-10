@@ -19,19 +19,19 @@
 
 <script>
 // import Header from "./components/Header";
-import Menu from './components/MenuBlock';
-import Banner from './components/BannerBlock'
-import Partners from './components/PartnersBlock'
-import Apps from './components/AppBlock'
-import About from './components/AboutBlock'
-import Analytics from './components/AnalyticsBlock'
-import Blog from './components/BlogBlock'
-import Customers from './components/CustomersBlock'
-import Faq from './components/FaqBlock'
-import Plan from './components/PlanBlock'
-import SingUp from './components/SingUpBlock'
-import Footer from './components/FooterBlock'
-import PopUP from './components/popup/popUp'
+import Menu from '@/components/MenuBlock';
+import Banner from '@/components/BannerBlock'
+import Partners from '@/components/PartnersBlock'
+import Apps from '@/components/AppBlock'
+import About from '@/components/AboutBlock'
+import Analytics from '@/components/AnalyticsBlock'
+import Blog from '@/components/BlogBlock'
+import Customers from '@/components/CustomersBlock'
+import Faq from '@/components/FaqBlock'
+import Plan from '@/components/PlanBlock'
+import SingUp from '@/components/SingUpBlock'
+import Footer from '@/components/FooterBlock'
+import PopUP from '@/components/popup/popUp'
 
 export default {
   name: 'App',
